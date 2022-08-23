@@ -8,6 +8,7 @@ import com.encora.travelbooking.exceptions.InvalidTravelDurationException;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -17,25 +18,33 @@ public class Main {
         TrainTicket trainTicket2 = null;
         try {
             trainTicket2 = new TrainTicket(123L, "London", "Edinburgh", new BigDecimal("59.00"),
-                    LocalDateTime.of(2023, 3, 7, 20, 03),
+                    LocalDateTime.of(2022, 9, 30, 16, 03),
                     LocalDateTime.of(2023, 3, 7, 19, 03),
                     TravelClass.FIRST, 3, 42);
             trainTicket2.upgrade();
             trainTicket2.cancel();
         } catch (InvalidTravelDurationException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
-        String[] providers = {"First Bus Company", "Second Bus Company"};
+        //String[] providers = {"First Bus Company", "Second Bus Company"};
+
+        ArrayList<String> providers = new ArrayList<>();
+        providers.add("First Bus Company");
+        providers.add("Second Bus Company");
+        providers.add("Third Bus Company");
+
+        System.out.println(providers.size());
+        System.out.println(providers);
 
         BusTicket busTicket = null;
         try {
             busTicket = new BusTicket(124L, "London", "Edinburgh", new BigDecimal("59.00"),
-                    LocalDateTime.of(2022, 3, 7, 16, 03),
-                    LocalDateTime.of(2022, 3, 7, 19, 03), providers);
+                    LocalDateTime.of(2022, 9, 30, 16, 03),
+                    LocalDateTime.of(2023, 3, 7, 19, 03), providers);
 
         } catch (InvalidTravelDurationException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         busTicket.cancel();
 
