@@ -4,6 +4,7 @@ import com.encora.travelbooking.domain.BusTicket;
 import com.encora.travelbooking.domain.PlaneTicket;
 import com.encora.travelbooking.domain.TrainTicket;
 import com.encora.travelbooking.domain.TravelClass;
+import com.encora.travelbooking.exceptions.InvalidTravelDurationException;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -11,7 +12,7 @@ import java.util.Scanner;
 
 public class RegisterTravelTicket {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidTravelDurationException {
         Scanner scanner = new Scanner(System.in);
         int option = 0;
 

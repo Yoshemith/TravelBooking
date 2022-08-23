@@ -1,5 +1,7 @@
 package com.encora.travelbooking.domain;
 
+import com.encora.travelbooking.exceptions.InvalidTravelDurationException;
+
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -13,7 +15,7 @@ public class BusTicket extends TravelTicket {
         super();
     }
 
-    public BusTicket(Long bookingRef, String origin, String destination, BigDecimal price, LocalDateTime departureTime, LocalDateTime arrivalTime, String[] permittedProviders) {
+    public BusTicket(Long bookingRef, String origin, String destination, BigDecimal price, LocalDateTime departureTime, LocalDateTime arrivalTime, String[] permittedProviders) throws InvalidTravelDurationException {
         super(bookingRef, origin, destination, price, departureTime, arrivalTime);
         this.permittedProviders = permittedProviders;
     }

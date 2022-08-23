@@ -1,6 +1,9 @@
 package com.encora.travelbooking.domain;
 
+import com.encora.travelbooking.exceptions.InvalidTravelDurationException;
+
 import java.math.BigDecimal;
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -15,7 +18,11 @@ public abstract class TravelTicket {
 
     public TravelTicket() {}
 
-    public TravelTicket(Long bookingRef, String origin, String destination, BigDecimal price, LocalDateTime departureTime, LocalDateTime arrivalTime) {
+    public TravelTicket(Long bookingRef, String origin, String destination, BigDecimal price, LocalDateTime departureTime, LocalDateTime arrivalTime) throws InvalidTravelDurationException {
+        if (Duration.between(departureTime, arrivalTime).toSeconds() < 0) {
+            throw new InvalidTravelDurationException("You cannot arrive before you depart!");
+        }
+
         this.bookingRef = bookingRef;
         this.origin = origin;
         this.destination = destination;
