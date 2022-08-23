@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65c51bad-4ded-4204-8df5-3cd1684993d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/TravelClass.java" afterDir="false" />
+    <list default="true" id="65c51bad-4ded-4204-8df5-3cd1684993d8" name="Changes" comment="Enums, toString and hashcode">
+      <change afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/RegisterTravelTicket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/BusTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/BusTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/PlaneTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/PlaneTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/TrainTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/TrainTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/TravelTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/TravelTicket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,7 +43,7 @@
       <recent name="com.encora.travelbooking" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.RegisterTravelTicket">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.encora.travelbooking.Main" />
       <module name="TravelBooking" />
@@ -62,8 +57,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegisterTravelTicket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.encora.travelbooking.RegisterTravelTicket" />
+      <module name="TravelBooking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.encora.travelbooking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RegisterTravelTicket" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -78,8 +87,16 @@
       <updated>1661179207014</updated>
       <workItem from="1661179208362" duration="5619000" />
       <workItem from="1661267890964" duration="282000" />
-      <workItem from="1661269346545" duration="961000" />
+      <workItem from="1661269346545" duration="2566000" />
     </task>
+    <task id="LOCAL-00001" summary="Enums, toString and hashcode">
+      <created>1661272269215</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661272269215</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,5 +112,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Enums, toString and hashcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enums, toString and hashcode" />
   </component>
 </project>
