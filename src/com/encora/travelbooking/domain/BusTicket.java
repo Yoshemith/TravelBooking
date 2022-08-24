@@ -61,7 +61,8 @@ public class BusTicket extends TravelTicket {
     @Override
     public String toString() {
         return "BusTicket{" +
+                super.toString() +
                 "permittedProviders=" + permittedProviders +
-                '}';
+                "} ";
     }
 }

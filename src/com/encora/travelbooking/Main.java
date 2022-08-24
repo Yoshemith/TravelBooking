@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidTravelDurationException {
         TrainTicket trainTicket = new TrainTicket();
         trainTicket.cancel();
         TrainTicket trainTicket2 = null;
@@ -38,15 +38,32 @@ public class Main {
         System.out.println(providers);
 
         BusTicket busTicket = null;
-        try {
-            busTicket = new BusTicket(124L, "London", "Edinburgh", new BigDecimal("59.00"),
+        busTicket = new BusTicket(124L, "London", "Edinburgh", new BigDecimal("59.00"),
                     LocalDateTime.of(2022, 9, 30, 16, 03),
                     LocalDateTime.of(2023, 3, 7, 19, 03), providers);
 
-        } catch (InvalidTravelDurationException e) {
-            e.printStackTrace();
+        BusTicket busTicket2 = new BusTicket(125L, "New York", "Boston", new BigDecimal("59.00"),
+                LocalDateTime.of(2022, 9, 30, 16, 03),
+                LocalDateTime.of(2023, 3, 7, 19, 03), providers);
+
+        BusTicket busTicket3 = new BusTicket(126L, "Paris", "Someplace", new BigDecimal("59.00"),
+                LocalDateTime.of(2022, 9, 30, 16, 03),
+                LocalDateTime.of(2023, 3, 7, 19, 03), providers);
+
+        ArrayList<BusTicket> busTickets = new ArrayList<>();
+        busTickets.add(busTicket);
+        busTickets.add(busTicket2);
+        busTickets.add(busTicket3);
+
+        System.out.println(busTickets.get(1));
+
+        for (int i = 0; i < busTickets.size(); i++) {
+            System.out.println(busTickets.get(i));
         }
-        busTicket.cancel();
+
+        for (BusTicket b: busTickets) {
+            System.out.println(b.getBookingRef());
+        }
 
         PlaneTicket planeTicket = new PlaneTicket();
 

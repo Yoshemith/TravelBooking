@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65c51bad-4ded-4204-8df5-3cd1684993d8" name="Changes" comment="Custom Exceptions and how it works">
+    <list default="true" id="65c51bad-4ded-4204-8df5-3cd1684993d8" name="Changes" comment="Arraylists p1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/BusTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/BusTicket.java" afterDir="false" />
@@ -90,7 +90,7 @@
       <workItem from="1661267890964" duration="282000" />
       <workItem from="1661269346545" duration="2749000" />
       <workItem from="1661281961957" duration="1605000" />
-      <workItem from="1661290962077" duration="1027000" />
+      <workItem from="1661290962077" duration="1777000" />
     </task>
     <task id="LOCAL-00001" summary="Enums, toString and hashcode">
       <created>1661272269215</created>
@@ -113,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661283964621</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Arraylists p1">
+      <created>1661292064389</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661292064389</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +141,7 @@
     <MESSAGE value="Enums, toString and hashcode" />
     <MESSAGE value="Console I/O" />
     <MESSAGE value="Custom Exceptions and how it works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Custom Exceptions and how it works" />
+    <MESSAGE value="Arraylists p1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arraylists p1" />
   </component>
 </project>
