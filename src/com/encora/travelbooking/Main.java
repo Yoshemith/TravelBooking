@@ -9,6 +9,7 @@ import com.encora.travelbooking.exceptions.InvalidTravelDurationException;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Main {
 
@@ -50,17 +51,22 @@ public class Main {
                 LocalDateTime.of(2022, 9, 30, 16, 03),
                 LocalDateTime.of(2023, 3, 7, 19, 03), providers);
 
-        ArrayList<BusTicket> busTickets = new ArrayList<>();
+        //ArrayList<BusTicket> busTickets = new ArrayList<>();
+        HashSet<BusTicket> busTickets = new HashSet<>();
+        busTickets.add(busTicket);
+        busTickets.add(busTicket2);
+        busTickets.add(busTicket3);
         busTickets.add(busTicket);
         busTickets.add(busTicket2);
         busTickets.add(busTicket3);
 
-        System.out.println(busTickets.get(1));
+//        System.out.println(busTickets.get(1));
+//
+//        for (int i = 0; i < busTickets.size(); i++) {
+//            System.out.println(busTickets.get(i));
+//        }
 
-        for (int i = 0; i < busTickets.size(); i++) {
-            System.out.println(busTickets.get(i));
-        }
-
+        //we can use for each in hashsets.
         for (BusTicket b: busTickets) {
             System.out.println(b.getBookingRef());
         }
