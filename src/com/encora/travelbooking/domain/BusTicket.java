@@ -22,6 +22,11 @@ public class BusTicket extends TravelTicket {
         this.permittedProviders = permittedProviders;
     }
 
+    public BusTicket(TravelTicket t, ArrayList<String> permittedProviders) throws InvalidTravelDurationException {
+        super(t.getBookingRef(), t.getOrigin(), t.getDestination(), t.getPrice(), t.getDepartureTime(), t.getArrivalTime());
+        this.permittedProviders = permittedProviders;
+    }
+
     public ArrayList<String> getPermittedProviders() {
         return permittedProviders;
     }
@@ -34,9 +39,8 @@ public class BusTicket extends TravelTicket {
     public void cancel() {
         Duration d = Duration.between(LocalDateTime.now(), getDepartureTime());
         Long days = d.toDays();
-        System.out.println(days);
-        System.out.println(LocalDateTime.now());
-        System.out.println(getDepartureTime());
+        System.out.println("days: " + days);
+        System.out.println("Between(" + LocalDateTime.now() + " , " + getDepartureTime() + " )");
         if (days > 30) {
             super.cancel();
         } else {
