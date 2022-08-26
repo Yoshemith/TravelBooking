@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65c51bad-4ded-4204-8df5-3cd1684993d8" name="Changes" comment="Hashsets">
-      <change afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/bookingprocess/BookingSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/bookingprocess/CheapTravelBookingSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/bookingprocess/EnjoyableToursBookingSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/utilities/BookingFunctions.java" afterDir="false" />
+    <list default="true" id="65c51bad-4ded-4204-8df5-3cd1684993d8" name="Changes" comment="Implementing interfaces">
+      <change afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/utilities/OriginSortComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/BusTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/BusTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/PlaneTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/PlaneTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/TrainTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/TrainTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/TravelTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/encora/travelbooking/domain/TravelTicket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,8 @@
       <workItem from="1661281961957" duration="1605000" />
       <workItem from="1661290962077" duration="2636000" />
       <workItem from="1661361788578" duration="3317000" />
-      <workItem from="1661453017034" duration="3548000" />
+      <workItem from="1661453017034" duration="3566000" />
+      <workItem from="1661482690501" duration="3168000" />
     </task>
     <task id="LOCAL-00001" summary="Enums, toString and hashcode">
       <created>1661272269215</created>
@@ -141,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661356644433</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implementing interfaces">
+      <created>1661462125030</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661462125030</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +173,7 @@
     <MESSAGE value="Arraylists p1" />
     <MESSAGE value="Arraylists - retrieving data and looping" />
     <MESSAGE value="Hashsets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hashsets" />
+    <MESSAGE value="Implementing interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing interfaces" />
   </component>
 </project>

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class BusTicket extends TravelTicket {
+public class BusTicket extends TravelTicket implements Comparable<TravelTicket> {
 
     private ArrayList<String> permittedProviders;
 

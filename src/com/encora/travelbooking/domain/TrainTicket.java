@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-public class TrainTicket extends TravelTicket {
+public class TrainTicket extends TravelTicket implements Comparable<TravelTicket> {
 
     private TravelClass travelClass;
     private Integer carriageNumber;
@@ -76,6 +76,6 @@ public class TrainTicket extends TravelTicket {
                 "travelClass=" + travelClass +
                 ", carriageNumber=" + carriageNumber +
                 ", seatNumber=" + seatNumber +
-                '}';
+                "} " + super.toString();
     }
 }

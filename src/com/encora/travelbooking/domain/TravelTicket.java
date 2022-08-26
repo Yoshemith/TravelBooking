@@ -7,7 +7,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-public abstract class TravelTicket {
+public abstract class TravelTicket implements Comparable<TravelTicket> {
 
     private Long bookingRef;
     private String origin;
@@ -29,6 +29,11 @@ public abstract class TravelTicket {
         this.price = price;
         this.departureTime = departureTime;
         this.arrivalTime = arrivalTime;
+    }
+
+    @Override
+    public int compareTo(TravelTicket o) {
+        return bookingRef.compareTo(o.getBookingRef());
     }
 
     public Long getBookingRef() {
@@ -62,7 +67,7 @@ public abstract class TravelTicket {
         return price;
     }
 
-    protected void setPrice(BigDecimal price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 
